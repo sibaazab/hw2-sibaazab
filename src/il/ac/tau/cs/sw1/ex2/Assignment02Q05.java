@@ -15,11 +15,15 @@ public class Assignment02Q05 {
 		for(int i=0;i < N; i++)
 			System.out.println(Arrays.toString(matrix[i]));
 		System.out.println("");
-		int[][] rotatedMatrix; // the rotated matrix
 		
-		// your code goes here below
-
-		
+		int[][] rotatedMatrix = new int[N][N]; // the rotated matrix
+				for (int i = 0; i<N; i++) {
+					int index = 0;
+					for (int j = N-1; j>=0; j--) {
+						rotatedMatrix[i][index] = matrix[j][i];
+						index++;
+					}
+				}
 		
 		
 		

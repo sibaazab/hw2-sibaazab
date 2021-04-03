@@ -11,7 +11,7 @@ public class Assignment02Q04 {
 		while (primeAmount < primes.length) {
 			boolean isPrime = true;
 			double sqrt = Math.sqrt(numToCheck);
-			int top = (int) sqrt;
+			int top = (int) sqrt+1;
 			for (int i = 0; i < primeAmount && primes[i] < top; i++) {
 				if (numToCheck % primes[i] == 0) {
 					isPrime = false;
